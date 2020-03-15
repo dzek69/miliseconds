@@ -1,4 +1,4 @@
-import Milliseconds, { milli } from "./index";
+import Milliseconds, { milli } from "./index.mjs";
 
 describe("Milliseconds", () => {
     it("should have value method returning value", () => {
