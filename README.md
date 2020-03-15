@@ -29,7 +29,7 @@ const interval = milli().hours(5).value();
 ### CommonJS
 
 ```javascript
-const Mili = require("miliseconds/dist").default
+const Mili = require("miliseconds").default
 ```
 
 ## Docs
