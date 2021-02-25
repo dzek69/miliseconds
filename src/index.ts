@@ -1,10 +1,12 @@
-/* eslint-disable no-magic-numbers */
+/* eslint-disable @typescript-eslint/no-magic-numbers */
 
 /**
  * @class Milliseconds
  */
 class Milliseconds {
-    constructor() {
+    private _value: number;
+
+    public constructor() {
         this._value = 0;
     }
 
@@ -13,7 +15,7 @@ class Milliseconds {
      * @param {number} amount - milliseconds to add
      * @returns {Milliseconds}
      */
-    milliseconds(amount) {
+    public milliseconds(amount: number) {
         this._value += amount;
         return this;
     }
@@ -23,7 +25,7 @@ class Milliseconds {
      * @param {number} amount - seconds to add
      * @returns {Milliseconds}
      */
-    seconds(amount) {
+    public seconds(amount: number) {
         return this.milliseconds(amount * 1000);
     }
 
@@ -32,7 +34,7 @@ class Milliseconds {
      * @param {number} amount - minutes to add
      * @returns {Milliseconds}
      */
-    minutes(amount) {
+    public minutes(amount: number) {
         return this.seconds(amount * 60);
     }
 
@@ -41,7 +43,7 @@ class Milliseconds {
      * @param {number} amount - hours to add
      * @returns {Milliseconds}
      */
-    hours(amount) {
+    public hours(amount: number) {
         return this.minutes(amount * 60);
     }
 
@@ -50,7 +52,7 @@ class Milliseconds {
      * @param {number} amount - days to add
      * @returns {Milliseconds}
      */
-    days(amount) {
+    public days(amount: number) {
         return this.hours(amount * 24);
     }
 
@@ -59,7 +61,7 @@ class Milliseconds {
      * @param {number} amount - weeks to add
      * @returns {Milliseconds}
      */
-    weeks(amount) {
+    public weeks(amount: number) {
         return this.days(amount * 7);
     }
 
@@ -68,7 +70,7 @@ class Milliseconds {
      * @param {number} amount - months to add
      * @returns {Milliseconds}
      */
-    months(amount) {
+    public months(amount: number) {
         return this.days(amount * 30);
     }
 
@@ -77,7 +79,7 @@ class Milliseconds {
      * @param {number} amount - years to add
      * @returns {Milliseconds}
      */
-    years(amount) {
+    public years(amount: number) {
         return this.days(amount * 365);
     }
 
@@ -85,7 +87,7 @@ class Milliseconds {
      * Gets current value as number
      * @returns {number}
      */
-    value() {
+    public value() {
         return this._value;
     }
 }
