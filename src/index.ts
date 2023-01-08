@@ -94,6 +94,7 @@ class Milliseconds {
 
 const milli = () => (new Milliseconds());
 
+// eslint-disable-next-line import/no-default-export
 export default Milliseconds;
 
 export {
