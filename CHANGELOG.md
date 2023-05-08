@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [UNRELEASED]
 (nothing yet)
 
+## [3.0.3] - 2023-05-09
+### Dev
+- deps upgrades
+
 ## [3.0.2] - 2022-01-08
 ### Dev
 - deps upgrades
